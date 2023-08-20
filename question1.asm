@@ -20,8 +20,6 @@ la $a0, buffer_for_input_string
 li $a1, 100
 syscall
 
-# >>>> MAKE YOUR CHANGES BELOW HERE:
-
 # Looping over characters of the string:
 la $t0, buffer_for_input_string
 la $t1, buffer_for_processed_string
@@ -49,7 +47,6 @@ addi $t0, $t0, 1
 addi $t1, $t1, 1
 bne $t4, $zero, LOOP
 
-# <<<< MAKE YOUR CHANGES ABOVE HERE
 
 # prompting the user with a message for the processed output:
 li $v0, 4
